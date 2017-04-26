@@ -6,7 +6,7 @@ Este repositório visa ajudar os alunos do curso de ZF1 e PHP ministrado no meu 
   * Instalação do Oracle;
   * Iniciando servidor PHP na linha de comando;
 2. Teoria e prática - Zend Framework;
-  * MVC - Teoria;
+  * [MVC - Teoria](https://github.com/paulovitorbal/curso-zf1-php/blob/master/mvc-teoria.md);
   * Fluxo da requisição;
   * Zend Db Adapter;
   * Zend Db Table;

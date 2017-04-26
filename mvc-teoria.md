@@ -7,4 +7,6 @@ As outras camadas são opcionais, por exemplo, você pode retornar um JSON diret
 
 Abaixo a imagem que demonstra o fluxo da requisição:
 
-![Zend Framework Dispatch Process](/zend dispatch process.png)
+![Zend Framework Dispatch Process](https://github.com/paulovitorbal/curso-zf1-php/blob/master/zend%20dispatch%20process.png?raw=true)
+
+Explicarei em detalhes na aula a imagem acima, mas não escrevei sobre ela agora.

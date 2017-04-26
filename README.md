@@ -8,12 +8,11 @@ Este repositório visa ajudar os alunos do curso de ZF1 e PHP ministrado no meu 
 2. Teoria e prática - Zend Framework;
   * MVC - Teoria;
   * Fluxo da requisição;
-  * Zend Db;
-    *Adapter;
-    *Table;
-    *Row;
-  * Layouts;
-    *Helpers;
+  * Zend Db Adapter;
+  * Zend Db Table;
+  * Zend Db Row;
+  * View Layout;
+  * View Helpers;
   * JSON;
  3. Erros comuns e dicas;
   * IDE;

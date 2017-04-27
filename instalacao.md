@@ -70,3 +70,13 @@ array(1) {
 }                                    
 ```
 
+## Inciciando um servidor web (built in server)
+
+Use o comando abaixo:
+```
+php -S localhost:80 -t public
+```
+O argumento ```-S localhost:80``` explicita qual o endereço e a porta que o servidor web responderá, poderia se colocar por exemplo um endereço ```acme.com:8080```;
+
+O argumento ```-t public``` indica em qual diretório o servidor irá utilizar como raíz, no caso ele irá procurar por um diretório ```public``` dentro do diretório atual;
+

@@ -2,7 +2,7 @@
 Este repositório visa ajudar os alunos do curso de ZF1 e PHP ministrado no meu trabalho em 2017;
 
 ## Minuta
-1. Instalação do PHP
+1. [Instalação do PHP](https://github.com/paulovitorbal/curso-zf1-php/blob/master/instalacao.md)
   * Instalação do Oracle;
   * Iniciando servidor PHP na linha de comando;
 2. Teoria e prática - Zend Framework;

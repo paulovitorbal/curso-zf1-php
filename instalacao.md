@@ -30,9 +30,9 @@ var_dump($res);
 
 A saída do console deve ser semelhante a esta:
 >php.exe oracle.php
-
+> 
 > PHP Fatal error:  Call to undefined function oci_connect() in C:\php\oracle.php on line 7
-
+> 
 > Fatal error: Call to undefined function oci_connect() in C:\php\oracle.php on line 7
 
 

@@ -113,3 +113,83 @@ $array[] = 'novo elemento no final do array';
   * foi explicitamente utilizado a constante NULL em uma atribuição;
   * não foi setado nenhum valor até o momento;
   * foi utilizado a função unset();
+* variavéis pré definidas, setadas pelo servidor de aplicação:
+  * $_SERVER;
+  * $_POST;
+  * $_GET;
+  * $_ENV;
+  * $_REQUEST;
+  * $_COOKIE;
+  * $_FILES;
+  * $_GLOBALS;
+
+## Operadores
+* Matemáticos:
+```php
+<?php
++$a; //identidade (conversão para int ou float, o que for apropriado);
+-$a; //negação (o valor negativo de $a);
+$a % $b; //módulo (resto da divisão inteira);
+$a ** $b; //exponênciação (a elevado a b); PHP 5.6
+```
+* Operadores bit-a-bit (bitwise)
+
+| Exemplo 	| Nome 	| Resultado 	|
+|------------------------------	|-------------------------	|----------------------------------------------------------------------------------------------	|
+| $a & $b 	| E (AND) 	| Os bits que estão ativos tanto em $a quanto em $b são ativados. 	|
+| $a | $b 	| OU (OR inclusivo) 	| Os bits que estão ativos em $a ou em $b são ativados. 	|
+| $a ^ $b 	| XOR (OR exclusivo) 	| Os bits que estão ativos em $a ou em $b, mas não em ambos, são ativados. 	|
+| ~ $a 	| NÃO (NOT) 	| Os bits que estão ativos em $a não são ativados, e vice-versa. 	|
+| $a << $b 	| Deslocamento à esquerda 	| Desloca os bits de $a $b passos para a esquerda (cada passo significa "multiplica por dois") 	|
+| $a >> $b 	| Deslocamento à direita 	| Desloca os bits de $a $b passos para a direita (cada passo significa "divide por dois") 	|
+
+* Operadores de comparação
+
+| Exemplo   | Nome                      | Resultado                                                                                                                                       |
+|-----------|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| $a == $b  | Igual                     | Verdadeiro (TRUE) se $a é igual a $b.                                                                                                           |
+| $a === $b | Idêntico                  | Verdadeiro (TRUE) se $a é igual a $b, e eles são do mesmo tipo.                                                                                 |
+| $a != $b  | Diferente                 | Verdadeiro se $a não é igual a $b.                                                                                                              |
+| $a <> $b  | Diferente                 | Verdadeiro se $a não é igual a $b.                                                                                                              |
+| $a !== $b | Não idêntico              | Verdadeiro de $a não é igual a $b, ou eles não são do mesmo tipo (introduzido no PHP4).                                                         |
+| $a < $b   | Menor que                 | Verdadeiro se $a é estritamente menor que $b.                                                                                                   |
+| $a > $b   | Maior que                 | Verdadeiro se $a é estritamente maior que $b.                                                                                                   |
+| $a <= $b  | Menor ou igual            | Verdadeiro se $a é menor ou igual a $b.                                                                                                         |
+| $a >= $b  | Maior ou igual            | Verdadeiro se $a é maior ou igual a $b.                                                                                                         |
+| $a <=> $b | Spaceship (nave espacial) | Um integer menor que, igual a ou maior que zero quando $a é, respectivamente, menor que, igual a ou maior que $b. Disponível a partir do PHP 7. |
+
+*Operador de controle de erro
+
+\@ quando precede uma empressão em PHP, qualquer mensagem de erro que possa ser gerada por aquela expressão será ignorada;
+**:no_entry_sign:NÃO USE ISSO!**
+
+*Operador de execução
+\`\` acento grave, o PHP tentará executar o conteúdo dentro dos acentos graves como um comando do shell;
+
+*Operadores lógicos
+
+| Exemplo   | Nome | Resultado                                                |
+|-----------|------|----------------------------------------------------------|
+| $a and $b | E    | Verdadeiro (TRUE) se tanto $a quanto $b são verdadeiros. |
+| $a or $b  | OU   | Verdadeiro se $a ou $b são verdadeiros.                  |
+| $a xor $b | XOR  | Verdadeiro se $a ou $b são verdadeiros, mas não ambos.   |
+| ! $a      | NÃO  | Verdadeiro se $a não é verdadeiro.                       |
+| $a && $b  | E    | Verdadeiro se tanto $a quanto $b são verdadeiros.        |
+| $a || $b  | OU   | Verdadeiro se $a ou $b são verdadeiros.                  |
+
+* Operadores de array
+
+| Exemplo   | Nome           | Resultado                                                                          |
+|-----------|----------------|------------------------------------------------------------------------------------|
+| $a + $b   | União          | União de $a e $b.                                                                  |
+| $a == $b  | Igualdade      | TRUE se $a e $b tem os mesmos pares de chave/valor.                                |
+| $a === $b | Identidade     | TRUE se $a e $b tem os mesmos pares de chave/valor na mesma ordem e do mesmo tipo. |
+| $a != $b  | Desigualdade   | TRUE se $a não é igual a $b.                                                       |
+| $a <> $b  | Desigualdade   | TRUE se $a não é igual a $b.                                                       |
+| $a !== $b | Não identidade | TRUE se $a não é identico a $b.                                                    |
+
+* Operador de tipo, é usado o comando *instanceof* para determinar se uma variável do PHP é uma instância de determinado objeto;
+```php
+if ($a instanceof mamiferos)
+    //do something
+```

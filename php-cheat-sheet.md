@@ -57,6 +57,7 @@ $dog->latirLiteralmente();
 ## Exemplo 2
 
 [Autoload de classes](http://php.net/manual/pt_BR/language.oop5.autoload.php)
+[Funções anonimas](http://php.net/manual/pt_BR/functions.anonymous.php)
 ```php
 <?php
 spl_autoload_register(function ($class_name) {
@@ -65,3 +66,50 @@ spl_autoload_register(function ($class_name) {
 $obj  = new MyClass1(); //auto inclui as classes MyClass1 do arquivo MyClass1.php sob demanda
 $obj2 = new MyClass2(); //auto inclui as classes MyClass2 do arquivo MyClass2.php sob demanda
 ```
+
+## Tipos de variáveis
+* boolean, pode assumir os valores TRUE ou FALSE;
+* integer, números inteiros incluindo representações binárias, hexadeciamais e octais;
+* float, números de ponto flutuante
+```php
+<?php
+$a = 1.234; 
+$b = 1.2e3; 
+$c = 7E-10;
+?>
+```
+* string, cadeia de caracteres;
+* array, mapeamento de valores e chaves. Pode ter como chave valores inteiros, ou strings.
+```php
+<?php
+$array = [ //php 5.4
+    "foo" => "bar",
+    "bar" => "foo",
+];
+$array = array(
+    "foo" => "bar",
+    "bar" => "foo",
+    100   => -100,
+    -100  => 100,
+);
+var_dump($array);
+var_dump($array['foo']);
+var_dump($array[-100]);
+
+<?php
+function getArray() {
+    return array(1, 2, 3);
+}
+$secondElement = getArray()[1]; //deferência //PHP 5.4
+// PHP 5.3
+$tmp = getArray();
+$secondElement = $tmp[1];
+
+$array[] = 'novo elemento no final do array';
+```
+* objetos, são instâncias de classes;
+* resources, tipo especial de variável que representa um recurso do sistema operacional, como uma conexão de banco, ou um arquivo aberto;
+* NULL, valor nulo, ocorre quando:
+  * foi explicitamente utilizado a constante NULL em uma atribuição;
+  * não foi setado nenhum valor até o momento;
+  * foi utilizado a função unset();

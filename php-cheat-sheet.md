@@ -1,5 +1,5 @@
-#Cheat Sheet
-
+# Cheat Sheet
+## Exemplo 1
 ```php
 
 <?php //Todo código php começa com esta tag
@@ -53,4 +53,15 @@ $dog->latirLiteralmente();
 
 #o código termina com a linha abaixo, sendo recomendado não usar o fechamento de tag quando se usa arquivo que contém PHP. Para evitar espaços em branco que podem forçar o iníco da sessão ao incluir tais arquivos.
 ?>
+```
+## Exemplo 2
+
+[Autoload de classes](http://php.net/manual/pt_BR/language.oop5.autoload.php)
+```php
+<?php
+spl_autoload_register(function ($class_name) {
+    include $class_name . '.php';
+});
+$obj  = new MyClass1(); //auto inclui as classes MyClass1 do arquivo MyClass1.php sob demanda
+$obj2 = new MyClass2(); //auto inclui as classes MyClass2 do arquivo MyClass2.php sob demanda
 ```

@@ -1,7 +1,7 @@
 #Cheat Sheet
 
 ```php
-<?php //Todo código php começa com esta tag e termina com ?>, sendo este opcional quando se trata de arquivo puramente php
+<?php //Todo código php começa com esta tag
 //link: http://php.net/manual/pt_BR/language.oop5.interfaces.php
 interface animal {
   [public|protected|private] function mover([$a, $a='default']);
@@ -20,4 +20,6 @@ class cachorro extends mamiferos{
   public function __toString(){/*método utilizado quando se tenta fazer uma conversão do objeto para texto*/}
   public function getReino(){ return self::reino; }
 }
+o código termina com a linha abaixo, sendo recomendado não usar o fechamento de tag quando se usa arquivo que contém PHP. Para evitar espaços em branco que podem forçar o iníco da sessão ao incluir tais arquivos.
+?>
 ```

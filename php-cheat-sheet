@@ -1,6 +1,6 @@
 #Cheat Sheet
 
-```php
+```
 <?php //Todo código php começa com esta tag e termina com ?>, sendo este opcional quando se trata de arquivo puramente php
 //link: http://php.net/manual/pt_BR/language.oop5.interfaces.php
 interface animal {

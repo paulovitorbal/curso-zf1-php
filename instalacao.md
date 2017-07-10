@@ -70,6 +70,10 @@ array(1) {
 }                                    
 ```
 
+Para utilizar o PHP7, recomendo o seguinte pacote de instalação: [PHP 7.1.7 NTS x64](http://windows.php.net/downloads/releases/php-7.1.7-nts-Win32-VC14-x64.zip)
+
+Com a seguinte biblioteca OCI8: [OCI8-2.1.3 NTS VC14 x64](http://windows.php.net/downloads/pecl/releases/oci8/2.1.3/php_oci8-2.1.3-7.1-nts-vc14-x64.zip)
+
 ## Inciciando um servidor web (built in server)
 
 Use o comando abaixo:

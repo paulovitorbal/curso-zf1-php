@@ -5,7 +5,11 @@ Este repositório visa ajudar os alunos do curso de ZF1 e PHP ministrado no meu 
 1. [Instalação do PHP](https://github.com/paulovitorbal/curso-zf1-php/blob/master/instalacao.md)
   * Instalação do Oracle;
   * Iniciando servidor PHP na linha de comando;
-2. Teoria e prática - Zend Framework;
+2. [PSR](https://github.com/paulovitorbal/curso-zf1-php/blob/master/psr.md)
+  * O que são os PSRs;
+  * PSR 1;
+  * PSR 2;
+3. Teoria e prática - Zend Framework;
   * [MVC - Teoria](https://github.com/paulovitorbal/curso-zf1-php/blob/master/mvc-teoria.md);
   * Zend Db Adapter;
   * Zend Db Table;
@@ -13,7 +17,7 @@ Este repositório visa ajudar os alunos do curso de ZF1 e PHP ministrado no meu 
   * View Layout;
   * View Helpers;
   * JSON;
- 3. Erros comuns e dicas;
+4. Erros comuns e dicas;
   * IDE;
   * Onde procurar ajuda;
   * Debugando;

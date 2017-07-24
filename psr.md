@@ -13,7 +13,7 @@ São requisitos obrigatórios para o código seja considerado aderente a PSR-0:
 *  Cada namespace deve ter seu nível mais alto "nome do fornecedor";
 *  Cada namespace deve ter quaisquer quantidade de subníveis;
 *  Cada separador de namespace é convertido para um separador de diretórios (constante: DIRECTORY_SEPARATOR) quando do carregamento do arquivo do sistema de arquivos;
-*  Cada caractere "_" no nome da classe é convertido para um separador de diretórios. O caracter "_" não possui nenhum significado especial no nome do namespace;
+*  Cada caractere "\_" no nome da classe é convertido para um separador de diretórios. O caracter "\_" não possui nenhum significado especial no nome do namespace;
 *  O namespace completamente qualificado é terminado com .php quando do carregamento do arquivo do sistema de arquivos;
 *  Nomes de fornecedor, namespaces e nome de classes podem conter caracteres alfabéticos e qualquer combinação de letras em caixa alta ou baixa.
 

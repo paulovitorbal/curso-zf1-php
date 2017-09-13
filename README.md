@@ -9,6 +9,10 @@ Este repositório visa ajudar os alunos do curso de ZF1 e PHP ministrado no meu 
   * O que são os PSRs;
   * Autoloading (PSR's 0 e 4);
   * Estilos (PSR's 1 e 2);
+3. [Introdução](https://github.com/paulovitorbal/curso-zf1-php/blob/master/php-basico-introducao.md)
+  * Paradigmas;
+  * Namespaces;
+  * SPL (Standart PHP Library);
 ## Zend framework - Básico  
 3. Teoria e prática - Zend Framework;
   * [MVC - Teoria](https://github.com/paulovitorbal/curso-zf1-php/blob/master/mvc-teoria.md);
